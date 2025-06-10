@@ -3,7 +3,7 @@
     "name": "my-video-app",
     "slug": "my-video-app",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
@@ -16,6 +16,9 @@
       "supportsTablet": true
     },
     "android": {
+      "permissions": [
+        "INTERNET"
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -28,8 +31,9 @@
     },
     "extra": {
       "eas": {
-        "projectId": "2c052bf3-ea58-4edb-a511-503188f698d4"
+        "projectId": "a22670e8-6f91-4c63-bc86-a4571d39b902"
       }
-    }
+    },
+    "owner": "cs005"
   }
 }
