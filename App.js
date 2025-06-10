@@ -16,7 +16,7 @@ export default function App() {
      <ScrollView contentContainerStyle={styles.container}>
       <GradientText text="Hook them before they scroll " style={styles.heading} />
       <Description />
-      <VideoPlayer uri="http://192.168.57.72:8000/video.m3u8?showAd=false" />
+      <VideoPlayer uri="http://192.168.145.102:8000/video.m3u8?showAd=false" />
     </ScrollView>
     </KeyboardAvoidingView>
      </SafeAreaView>

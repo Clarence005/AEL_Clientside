@@ -29,7 +29,7 @@ export default function VideoPlayer({ uri }) {
     // if the user skip get the current position of the vedio and loading the merged m3u8 file by sending the showAd as true
     const currentTime = status.positionMillis;
     setShowForm(false);
-    setCurrentUri('http://192.168.57.72:8000/video.m3u8?showAd=true');
+    setCurrentUri('http://192.168.145.102:8000/video.m3u8?showAd=true');
     setTimeout(() => {
     if (video.current) {
       video.current.playFromPositionAsync(currentTime);
