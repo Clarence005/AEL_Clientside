@@ -3,7 +3,7 @@ import { View, StyleSheet,ScrollView,SafeAreaView,Platform,KeyboardAvoidingView}
 import GradientText from './components/GradientText';
 import VideoPlayer from './components/VideoPlayer';
 import Description from './components/Description';
-
+import Logo from "./components/icons/CanvasLogo"
 
 
 export default function App() {
@@ -14,9 +14,12 @@ export default function App() {
         behavior={Platform.OS === 'ios' ? 'padding' : undefined}
       >
      <ScrollView contentContainerStyle={styles.container}>
-      <GradientText text="Hook them before they scroll " style={styles.heading} />
+          <View style={styles.headerRow}>
+    <Logo width={50} height={50} />
+    <GradientText text="Hook them before they scroll" style={styles.headingRight} />
+  </View>
       <Description />
-      <VideoPlayer uri="http://192.168.145.102:8000/video.m3u8?showAd=false" />
+      <VideoPlayer uri="https://ael-server.onrender.com/video.m3u8?showAd=false" />
     </ScrollView>
     </KeyboardAvoidingView>
      </SafeAreaView>
@@ -35,12 +38,25 @@ const styles = StyleSheet.create({
   container: {
     padding: 20,
     alignItems: 'center',
+    
   },
-  heading: {
-    fontSize: 28,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    marginTop: 40,
-    marginBottom: 20,
-  },
+  
+ headerRow: {
+  flexDirection: 'row',
+  alignItems: 'center',
+  justifyContent:'center',
+  width: '100%',
+  paddingTop: Platform.OS === 'android' ? 30 : 15,
+  marginTop:10,
+  marginBottom:25,
+  paddingBottom: 10,
+},
+
+headingRight: {
+  fontSize: 20,
+  fontWeight: 'bold',
+  marginLeft: 2,
+  flexShrink: 1, 
+},
+
 });

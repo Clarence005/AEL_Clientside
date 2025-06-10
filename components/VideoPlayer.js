@@ -29,7 +29,7 @@ export default function VideoPlayer({ uri }) {
     // if the user skip get the current position of the vedio and loading the merged m3u8 file by sending the showAd as true
     const currentTime = status.positionMillis;
     setShowForm(false);
-    setCurrentUri('http://192.168.145.102:8000/video.m3u8?showAd=true');
+    setCurrentUri('https://ael-server.onrender.com/video.m3u8?showAd=true');
     setTimeout(() => {
     if (video.current) {
       video.current.playFromPositionAsync(currentTime);
@@ -70,8 +70,8 @@ const styles = StyleSheet.create({
   container: {
       borderRadius: 20,
     overflow: 'hidden',
-    width: '100%',
-    height: isLandscape ? height * 0.6 : width * (9 / 16), // Adaptive height
+    width: '95%',
+    height: isLandscape ? height * 0.6 : width * (8 / 16), 
     marginTop: isLandscape ? 20 : 50,
   },
   video: {

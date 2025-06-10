@@ -5,7 +5,7 @@ import { Text, StyleSheet } from 'react-native';
 export default function Description() {
   return (
     <Text style={styles.description}>
-      Experience Seamless First-Party Data Collection through AEL — Engage and Convert Effectively.
+     Unlock new ways to increase retention within your video player.
     </Text>
   );
 }
@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
   description: {
     color: '#fff',
     fontSize: 16,
-    marginTop: 15,
     textAlign: 'center',
+    marginBottom:15
   },
 });
