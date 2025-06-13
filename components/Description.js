@@ -5,7 +5,7 @@ import { Text, StyleSheet } from 'react-native';
 export default function Description() {
   return (
     <Text style={styles.description}>
-     Unlock new ways to increase retention within your video player.
+     Canvas AEL now works with SSAI to turn passive streams into actionable revenue moments
     </Text>
   );
 }
